@@ -1,0 +1,65 @@
+<div class="contener" >
+<div class="AddProduct">
+    <h2>Add product here now </h2>
+    <div class="form-group">
+        <label>Name</label>
+        <div >
+<input [(ngModel)]="textName " type="text" class="from-control">
+
+        </div>
+<div class="from-group">
+    <label>Price</label>
+    <div><input class="form-control" [(ngModel)]="textprice"
+         type="text">
+        </div>
+    </div>
+<div>
+<button (click)="Addproduct()" class="btn-btn-success">Add PRODUCT </button>
+
+</div>
+<div>
+    <h1>Product List</h1>
+    <table class="table table-hover">
+        <thead>
+            <th>Name </th>
+            <th>price</th>
+            <th>Action </th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of product ;let i=index">
+                    <td>{product.Name}</td>
+                        <td>{product.price}</td>
+
+<td>
+<button class="btn-btn-danger"(click)="Delect Product()">Delect Product</button>
+
+
+
+</td>>
+
+
+
+
+                </tr>
+
+
+
+                </tbody>
+
+
+
+    </table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  
